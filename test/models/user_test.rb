@@ -62,7 +62,6 @@ class UserTest < ActiveSupport::TestCase
   
   test "" do 
     @user.password = @user.password_confirmation = "A"*5
-    byebug
     assert_not @user.valid?
   end
 end
